@@ -6,11 +6,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.Set;
 
-/**
- * Объект представляющий жанры для фильмов
- * @autor Ilkevich Anastasiya
- * @version 1.0
- */
+
 
 @Entity
 @Table(name = "genres")

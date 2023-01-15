@@ -11,12 +11,6 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Set;
 
-/**
- * Объект представляющий фильмы для пользователя
- * @autor Ilkevich Anastasiya
- * @version 1.0
- *
- */
 
 @Entity
 @Table(name = "movies")

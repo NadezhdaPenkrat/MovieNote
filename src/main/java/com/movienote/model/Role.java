@@ -6,11 +6,6 @@ import lombok.*;
 import javax.persistence.*;
 import java.util.Set;
 
-/**
- * Объект представляющий роль для пользователя
- * @autor Ilkevich Anastasiya
- * @version 1.0
- */
 
 @Entity
 @Table(name = "roles")
