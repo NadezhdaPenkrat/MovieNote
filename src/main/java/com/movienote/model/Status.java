@@ -2,6 +2,6 @@ package com.movienote.model;
 
 public enum Status {
 
-    NEW, REGISTERED, UNREGISTERED
-
+    ROLE_USER,
+    ROLE_ADMIN
 }
