@@ -8,28 +8,24 @@ import lombok.Data;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GenreDto {
-
-    private String name;
     @JsonProperty("id")
-    private Long externalId;
+    private Long id;
+    @JsonProperty("name")
+    private String name;
 
-
-    public Genre toGenre(GenreDto genreDto) {
-
+    public Genre toGenre() {
         Genre genre = new Genre();
-        genre.setExternalId(genreDto.getExternalId());
-        genre.setName(genreDto.getName());
+        genre.setExternalId(id);
+        genre.setName(name);
         return genre;
-
     }
 
-
-    public GenreDto toDto() {
-
-        GenreDto genreDto = new GenreDto();
-        genreDto.setExternalId(getExternalId());
-        genreDto.setName(getName());
+    public GenreDtoUpdate fromGenre(Genre genre) {
+        GenreDtoUpdate genreDto = new GenreDtoUpdate();
+        genreDto.setId(genre.getExternalId());
+        genreDto.setName(genre.getName());
         return genreDto;
-
     }
 }
+
+
