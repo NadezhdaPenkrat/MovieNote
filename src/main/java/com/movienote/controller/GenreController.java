@@ -2,6 +2,7 @@ package com.movienote.controller;
 
 import com.movienote.model.Genre;
 import com.movienote.service.GenreService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
 public class GenreController {
 
     private final GenreService genreService;
-
+    @Autowired
     public GenreController(GenreService genreService) {
         this.genreService = genreService;
     }
