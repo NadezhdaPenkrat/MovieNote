@@ -9,7 +9,7 @@ import java.net.URISyntaxException;
 
 @Slf4j
 @Service
-public class TmdbUriBuildService {
+public class TmdbUriBuildServiceImpl {
 
     @Value("${tmdb.api.url}")
     private String tmdbApiUrl;

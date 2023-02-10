@@ -2,9 +2,8 @@ package com.movienote.controller;
 
 import com.movienote.dto.DTO;
 import com.movienote.dto.GenreDto;
-import com.movienote.dto.GenreDtoUpdate;
 import com.movienote.service.AbstractService;
-import com.movienote.service.impl.TmdbUriBuildService;
+import com.movienote.service.TmdbUriBuildService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
